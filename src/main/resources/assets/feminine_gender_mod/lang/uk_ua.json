@@ -1,0 +1,21 @@
+{
+	"feminine_gender_mod.appearance_settings.title": "Параметри зовнішнього вигляду",
+	"feminine_gender_mod.label.gender": "Стать",
+	"feminine_gender_mod.label.female": "Жінка",
+	"feminine_gender_mod.label.male": "Чоловік",
+	"feminine_gender_mod.label.other": "Інше",
+	"feminine_gender_mod.label.enabled": "Увімкнено",
+	"feminine_gender_mod.label.disabled": "Вимкнено",
+	"feminine_gender_mod.breast_customization.dual_physics": "Подвійна фізика %s",
+	"feminine_gender_mod.char_settings.physics": "Фізика грудей: %s",
+	"feminine_gender_mod.char_settings.hurt_sounds": "Жіночі звуки поранення: %s",
+	"feminine_gender_mod.char_settings.hide_in_armor": "Приховувати під бронею: %s",
+	"feminine_gender_mod.wardrobe.slider.breast_size": "Розмір грудей: %s%%",
+	"feminine_gender_mod.wardrobe.slider.separation": "Відстань: %s",
+	"feminine_gender_mod.wardrobe.slider.height": "Висота: %s",
+	"feminine_gender_mod.wardrobe.slider.depth": "Глибина: %s",
+	"feminine_gender_mod.wardrobe.slider.rotation": "Обертання: %s градусів",
+	"feminine_gender_mod.slider.bounce": "Інтенсивність пружності: %s%%",
+	"feminine_gender_mod.slider.floppy": "Імпульс грудей: %s%%",
+	"key.feminine_gender_mod.wardrobe": "Меню жіночої статі"
+}

@@ -1,0 +1,21 @@
+{
+	"feminine_gender_mod.appearance_settings.title": "Ussehe",
+	"feminine_gender_mod.label.gender": "Geschlecht",
+	"feminine_gender_mod.label.female": "Wiiblich",
+	"feminine_gender_mod.label.male": "Mänlich",
+	"feminine_gender_mod.label.other": "Anderi",
+	"feminine_gender_mod.label.enabled": "Aktiviert",
+	"feminine_gender_mod.label.disabled": "Deaktiviert",
+	"feminine_gender_mod.breast_customization.dual_physics": "Dualphysik: %s",
+	"feminine_gender_mod.char_settings.physics": "Brustphysik: %s",
+	"feminine_gender_mod.char_settings.hurt_sounds": "Wiibliche Soundeffekte: %s",
+	"feminine_gender_mod.char_settings.hide_in_armor": "Versteckt mit Rüstig: %s",
+	"feminine_gender_mod.wardrobe.slider.breast_size": "Brustgrössi: %s%%",
+	"feminine_gender_mod.wardrobe.slider.separation": "Separierig: %s",
+	"feminine_gender_mod.wardrobe.slider.height": "Höhi: %s",
+	"feminine_gender_mod.wardrobe.slider.depth": "Tiefi: %s",
+	"feminine_gender_mod.wardrobe.slider.rotation": "Drehig: %s degrees",
+	"feminine_gender_mod.slider.bounce": "Wackel Intensität: %sx",
+	"feminine_gender_mod.slider.floppy": "Brust Schwung: %s%%",
+	"key.feminine_gender_mod.wardrobe": "Geschlechtsmenu"
+}

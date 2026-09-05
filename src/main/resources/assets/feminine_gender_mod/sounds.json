@@ -1,0 +1,15 @@
+{
+	"female_hurt": {
+		"category": "player",
+		"sounds": [
+			{
+				"name": "feminine_gender_mod:female_damage",
+				"stream": false
+			},
+			{
+				"name": "feminine_gender_mod:female_damage2",
+				"stream": false
+			}
+		]
+	}
+}

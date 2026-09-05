@@ -1,0 +1,21 @@
+{
+	"feminine_gender_mod.appearance_settings.title": "Nastavení vzhledu",
+	"feminine_gender_mod.label.gender": "Pohlaví",
+	"feminine_gender_mod.label.female": "Žena",
+	"feminine_gender_mod.label.male": "Muž",
+	"feminine_gender_mod.label.other": "Jiné",
+	"feminine_gender_mod.label.enabled": "Zapnuto",
+	"feminine_gender_mod.label.disabled": "Vypnuto",
+	"feminine_gender_mod.breast_customization.dual_physics": "Dvojí fyzika: %s",
+	"feminine_gender_mod.char_settings.physics": "Fyzika prsou: %s",
+	"feminine_gender_mod.char_settings.hurt_sounds": "Ženské zvuky zranění: %s",
+	"feminine_gender_mod.char_settings.hide_in_armor": "Schovat v brnění: %s",
+	"feminine_gender_mod.wardrobe.slider.breast_size": "Velikost: %s%%",
+	"feminine_gender_mod.wardrobe.slider.separation": "Mezera: %s",
+	"feminine_gender_mod.wardrobe.slider.height": "Výška: %s",
+	"feminine_gender_mod.wardrobe.slider.depth": "Hloubka: %s",
+	"feminine_gender_mod.wardrobe.slider.rotation": "Natočení: %s°",
+	"feminine_gender_mod.slider.bounce": "Intenzita houpání: %s%%",
+	"feminine_gender_mod.slider.floppy": "Hybnost: %s%%",
+	"key.feminine_gender_mod.wardrobe": "Menu ženského pohlaví"
+}

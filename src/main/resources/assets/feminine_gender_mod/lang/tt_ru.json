@@ -1,0 +1,23 @@
+{
+	"feminine_gender_mod.appearance_settings.title": "Тышкы кыяфәт көйләүләре",
+	"feminine_gender_mod.label.gender": "Җенес",
+	"feminine_gender_mod.label.female": "Хатын",
+	"feminine_gender_mod.label.male": "Ир",
+	"feminine_gender_mod.label.other": "Башка",
+	"feminine_gender_mod.label.enabled": "Кушык",
+	"feminine_gender_mod.label.disabled": "Сүнек",
+	"feminine_gender_mod.breast_customization.tab_customization": "Көйләү",
+	"feminine_gender_mod.breast_customization.dual_physics": "Ике-физик: %s",
+	"feminine_gender_mod.char_settings.physics": "Имчәк физикасы: %s",
+	"feminine_gender_mod.char_settings.override_armor_physics": "Көбә физикасы: %s",
+	"feminine_gender_mod.char_settings.hurt_sounds": "Яралану тавышлары: %s",
+	"feminine_gender_mod.char_settings.hide_in_armor": "Көбәдә яшерү: %s",
+	"feminine_gender_mod.wardrobe.slider.breast_size": "Имчәк зурлыгы: %s%%",
+	"feminine_gender_mod.wardrobe.slider.separation": "Уем: %s",
+	"feminine_gender_mod.wardrobe.slider.height": "Биеклек: %s",
+	"feminine_gender_mod.wardrobe.slider.depth": "Тирәнлек: %s",
+	"feminine_gender_mod.wardrobe.slider.rotation": "Бору: %s градус",
+	"feminine_gender_mod.slider.bounce": "Сикерү интенсивлыгы: ×%s",
+	"feminine_gender_mod.slider.floppy": "Имчәк моменты: %s%%",
+	"key.feminine_gender_mod.wardrobe": "Хатын җенесе менюсы"
+}
