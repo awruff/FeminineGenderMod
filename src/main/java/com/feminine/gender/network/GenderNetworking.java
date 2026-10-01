@@ -50,12 +50,13 @@ public final class GenderNetworking {
             }
         });
 
-        ServerConnectionEvents.PLAY_READY.register((server, joining) -> {
+        ServerConnectionEvents.PLAY_READY.register(ctx -> {
+            ServerPlayerEntity joining = ctx.player();
             if (joining == null) {
                 return;
             }
 
-            for (ServerPlayerEntity other : server.getPlayerManager().getAll()) {
+            for (ServerPlayerEntity other : ctx.server().getPlayerManager().getAll()) {
                 if (other == joining) {
                     continue;
                 }
@@ -66,7 +67,8 @@ public final class GenderNetworking {
             }
         });
 
-        ServerConnectionEvents.DISCONNECT.register((server, player) -> {
+        ServerConnectionEvents.DISCONNECT.register(ctx -> {
+            ServerPlayerEntity player = ctx.player();
             if (player != null) {
                 GenderCache.remove(player.getUuid());
             }
