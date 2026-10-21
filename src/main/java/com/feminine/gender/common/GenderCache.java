@@ -4,6 +4,7 @@ import java.util.Collection;
 import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.function.Predicate;
 
 public final class GenderCache {
 
@@ -34,6 +35,10 @@ public final class GenderCache {
 
     public static void remove(UUID uuid) {
         CACHE.remove(uuid);
+    }
+
+    public static void removeIf(Predicate<PlayerGenderData> predicate) {
+        CACHE.values().removeIf(predicate);
     }
 
     public static void clear() {

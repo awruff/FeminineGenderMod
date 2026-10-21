@@ -10,6 +10,10 @@ public class PlayerGenderData {
     private final GenderSettings settings = new GenderSettings();
     private final BothBreastsPhysics physics = new BothBreastsPhysics(this);
 
+    public volatile SyncStatus syncStatus = SyncStatus.UNKNOWN;
+    public volatile boolean needsCloudSync;
+    public volatile long lastAccessed = System.currentTimeMillis();
+
     public PlayerGenderData(UUID uuid) {
         this.uuid = uuid;
     }
@@ -20,5 +24,10 @@ public class PlayerGenderData {
 
     public BothBreastsPhysics physics() {
         return physics;
+    }
+
+    public void updateFromSync(GenderSettings settings) {
+        this.settings.copyFrom(settings);
+        this.syncStatus = SyncStatus.SYNCED;
     }
 }

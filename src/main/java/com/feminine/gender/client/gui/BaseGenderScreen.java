@@ -1,5 +1,8 @@
 package com.feminine.gender.client.gui;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.feminine.gender.client.ClientGenderState;
 import com.feminine.gender.common.GenderSettings;
 import com.feminine.gender.common.PlayerGenderData;
@@ -55,6 +58,20 @@ public abstract class BaseGenderScreen extends Screen {
         if (this.minecraft.player != null) {
             SurvivalInventoryScreen.renderEntity(x, y, size, x - mouseX, y - 50 - mouseY, this.minecraft.player);
         }
+    }
+
+    protected void renderTooltip(ButtonWidget button, int mouseX, int mouseY, String... paragraphs) {
+        if (!button.visible || !button.isHovered()) {
+            return;
+        }
+        List<String> lines = new ArrayList<String>();
+        for (String paragraph : paragraphs) {
+            if (!lines.isEmpty()) {
+                lines.add("");
+            }
+            lines.addAll(this.textRenderer.split(paragraph, 200));
+        }
+        renderTooltip(lines, mouseX, mouseY);
     }
 
     @Override

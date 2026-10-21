@@ -33,7 +33,7 @@ public final class ClientGenderNetworking {
 
                     return;
                 }
-                GenderCache.getOrCreate(uuid).settings().copyFrom(settings);
+                GenderCache.getOrCreate(uuid).updateFromSync(settings);
             }
         });
 

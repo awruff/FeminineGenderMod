@@ -3,7 +3,6 @@ package com.feminine.gender.client;
 import java.util.List;
 
 import com.feminine.gender.client.gui.WardrobeScreen;
-import com.feminine.gender.common.GenderCache;
 import com.feminine.gender.common.PlayerGenderData;
 import com.feminine.gender.config.GenderConfig;
 
@@ -36,21 +35,22 @@ public class FeminineGenderModClient implements ClientModInitializer {
 
     private static void tick(Minecraft minecraft) {
         if (openWardrobe != null && openWardrobe.consumeClick() && minecraft.screen == null && minecraft.player != null) {
-            minecraft.openScreen(new WardrobeScreen(null));
+            minecraft.openScreen(WardrobeScreen.create(null));
         }
 
-        ClientGenderState.tickSync();
+        ClientGenderState.tick(minecraft);
 
         World world = minecraft.world;
-        if (world == null || (minecraft.screen != null && minecraft.screen.shouldPauseGame())) {
+        if (world == null) {
             return;
         }
+        boolean paused = minecraft.screen != null && minecraft.screen.shouldPauseGame();
 
         List<PlayerEntity> players = world.players;
         for (int i = 0; i < players.size(); i++) {
             PlayerEntity player = players.get(i);
-            PlayerGenderData data = GenderCache.get(player.getUuid());
-            if (data != null && data.settings().getGender().canHaveBreasts()) {
+            PlayerGenderData data = ClientGenderState.getOrLoad(player.getUuid());
+            if (!paused && data.settings().getGender().canHaveBreasts()) {
                 data.physics().tick(player);
             }
         }

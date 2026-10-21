@@ -45,7 +45,7 @@ public final class GenderNetworking {
                     return;
                 }
                 UUID uuid = sender.getUuid();
-                GenderCache.getOrCreate(uuid).settings().copyFrom(settings);
+                GenderCache.getOrCreate(uuid).updateFromSync(settings);
                 broadcast(ctx.server().getPlayerManager().getAll(), uuid, settings, sender);
             }
         });
